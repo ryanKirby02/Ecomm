@@ -8,7 +8,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider store={store} fluid='true'>
     <App />
   </Provider>,
   document.getElementById('root')
