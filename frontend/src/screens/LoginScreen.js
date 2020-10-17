@@ -4,7 +4,7 @@ import { Form, Button, Row, Col, FormGroup, FormLabel, FormControl } from 'react
 import { useDispatch, useSelector } from 'react-redux'
 import { Message } from '../components/Message.js'
 import { Loader } from '../components/Loader.js'
-import { login } from '../actions/userLoginActions.js'
+import { login } from '../actions/userActions.js'
 import FormContainer from '../components/FormContainer'
 
 const LoginScreen = ({ location, history }) => {
