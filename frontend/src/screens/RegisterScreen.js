@@ -14,6 +14,7 @@ import { Message } from '../components/Message.js';
 import { Loader } from '../components/Loader.js';
 import { register } from '../actions/userActions.js';
 import FormContainer from '../components/FormContainer';
+import Meta from '../components/Meta';
 
 const RegisterScreen = ({ location, history }) => {
   const [name, setName] = useState('');
@@ -47,6 +48,7 @@ const RegisterScreen = ({ location, history }) => {
 
   return (
     <FormContainer>
+    <Meta title='Welcome To Our Shop | Register' />
       <h1>Sign Up</h1>
       {message && <Message variant='danger'>{message}</Message>}
       {error && <Message variant='danger'>{error}</Message>}

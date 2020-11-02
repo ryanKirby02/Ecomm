@@ -19,6 +19,7 @@ import {
 } from '../actions/productAction';
 import { Message } from '../components/Message.js';
 import { Loader } from '../components/Loader.js';
+import Meta from '../components/Meta'
 
 const ProductScreen = ({ history, match }) => {
   const [qty, setQty] = useState(1);
@@ -72,6 +73,7 @@ const ProductScreen = ({ history, match }) => {
       ) : (
         <>
           <Row>
+            <Meta title={product.name} />
             <Col md={6}>
               <Image src={product.image} alt={product.name} fluid='true' />
             </Col>

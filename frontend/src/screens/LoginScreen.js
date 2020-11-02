@@ -14,6 +14,7 @@ import { Message } from '../components/Message.js';
 import { Loader } from '../components/Loader.js';
 import { login } from '../actions/userActions.js';
 import FormContainer from '../components/FormContainer';
+import Meta from '../components/Meta';
 
 const LoginScreen = ({ location, history }) => {
   const [email, setEmail] = useState('');
@@ -39,6 +40,7 @@ const LoginScreen = ({ location, history }) => {
 
   return (
     <FormContainer>
+      <Meta title='Welcome To Our Shop | Login' />
       <h1>Sign In</h1>
       {error && <Message variant='danger'>{error}</Message>}
       {loading && <Loader />}

@@ -15,6 +15,7 @@ import { Message } from '../components/Message.js';
 import { Loader } from '../components/Loader.js';
 import { getUserDetails, updateUserProfile } from '../actions/userActions.js';
 import { listMyOrders } from '../actions/orderActions.js';
+import Meta from '../components/Meta';
 
 const ProfileScreen = ({ location, history }) => {
   const [name, setName] = useState('');
@@ -65,6 +66,7 @@ const ProfileScreen = ({ location, history }) => {
 
   return (
     <Row>
+    <Meta title={`${userInfo.name}'s Profile`} />
       <Col md={3}>
         <h2>User Profile</h2>
         {message && <Message variant='danger'>{message}</Message>}

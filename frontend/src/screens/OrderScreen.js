@@ -11,6 +11,7 @@ import {
 } from '../actions/orderActions';
 import axios from 'axios';
 import { PayPalButton } from 'react-paypal-button-v2';
+import Meta from '../components/Meta';
 
 const OrderScreen = ({ match, history }) => {
   const dispatch = useDispatch();
@@ -83,6 +84,7 @@ const OrderScreen = ({ match, history }) => {
     <Message variant='danger'>{error}</Message>
   ) : (
     <>
+    <Meta title='Welcome To Our Shop | Order' />
       <h1>Order Id: {order._id}</h1>
       <Row>
         <Col md={8}>
