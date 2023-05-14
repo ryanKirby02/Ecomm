@@ -25,7 +25,7 @@ const PlaceOrderScreen = ({ history }) => {
 
   cart.totalPrice = (
     Number(cart.itemsPrice) +
-    Number(cart.shippingPrice) +
+    10.00 +
     Number(cart.taxPrice)
   ).toFixed(2);
 
@@ -123,7 +123,7 @@ const PlaceOrderScreen = ({ history }) => {
               <ListGroup.Item>
                 <Row>
                   <Col>Shipping</Col>
-                  <Col>${cart.shippingPrice}</Col>
+                  <Col>$10.00</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
