@@ -67,7 +67,7 @@ const RegisterScreen = ({ location, history }) => {
           <FormLabel>Email Address</FormLabel>
           <FormControl
             type='email'
-            placeholder='enter email'
+            placeholder='Enter Email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           ></FormControl>
@@ -97,7 +97,7 @@ const RegisterScreen = ({ location, history }) => {
       <Row className='py-3'>
         <Col>
           Have an account?{' '}
-          <Link to={redirect ? `/login?redirect${redirect}` : '/login'}>
+          <Link style={{color: '#0000EE'}} to={redirect ? `/login?redirect${redirect}` : '/login'}>
             Sign in!
           </Link>
         </Col>

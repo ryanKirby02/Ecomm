@@ -49,7 +49,7 @@ const LoginScreen = ({ location, history }) => {
           <FormLabel>Email Address</FormLabel>
           <FormControl
             type='email'
-            placeholder='enter email'
+            placeholder='Enter Email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           ></FormControl>
@@ -58,7 +58,7 @@ const LoginScreen = ({ location, history }) => {
           <FormLabel>Password</FormLabel>
           <FormControl
             type='password'
-            placeholder='enter email'
+            placeholder='Enter Password'
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           ></FormControl>
@@ -70,7 +70,7 @@ const LoginScreen = ({ location, history }) => {
       <Row className='py-3'>
         <Col>
           New Customer?{' '}
-          <Link to={redirect ? `/register?redirect${redirect}` : '/register'}>
+          <Link style={{color: '#0000EE'}} to={redirect ? `/register?redirect${redirect}` : '/register'}>
             Register Here!
           </Link>
         </Col>
