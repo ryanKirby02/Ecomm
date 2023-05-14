@@ -22,6 +22,9 @@
   "bugs": {
     "url": "https://github.com/ryanKirby02/Ecomm/issues"
   },
+  "engines": {
+    "node": "16.20.0"
+  },
   "homepage": "https://github.com/ryanKirby02/Ecomm#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
